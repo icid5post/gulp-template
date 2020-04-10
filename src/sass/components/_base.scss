@@ -1,0 +1,70 @@
+html {
+
+	height: 100%;
+	@media screen and (max-width: $desktopWidth) {
+		font-size: 14px;
+	}
+	@media screen and (max-width: $tableWidth) {
+		font-size: 12px;
+	}
+	@media screen and (max-width: $phoneWidth) {
+		font-size: 12px;
+	}
+}
+
+body{
+	font-size: $mainFontSize;
+	color: $mainFontColor;
+	font-family: $mainFont;
+	line-height: $mainLineHeight;
+}
+
+#wrapper,
+.dashboard-wrapper,
+.page-wrapper,
+body{
+	height: 100%;
+	background-color: #f8f8f8;
+}
+.page-wrapper{
+	background-color: $light-color;
+	transition: transform ease 0.3s;
+}
+
+
+@media (min-width: $smDesktopWidth){
+	.page-wrapper {
+		position: inherit;
+		margin-left: 250px;
+		padding: 0;
+		overflow: auto;
+	}
+}
+
+.page-content{
+	padding: 20px 15px;
+}
+
+@media (min-width: $smDesktopWidth){
+	.page-content{
+		padding: 20px;
+	}
+}
+
+.page-header{
+	background-color: #fff;
+	padding: 10px 20px;
+	display: flex;
+	align-items: center;
+}
+
+.page-title{
+	font-size: rem(24px);
+	margin-right: auto;
+	align-items: center;
+	display: flex;
+	.badge{
+		font-size: 14px;
+		margin-left: 15px;
+	}
+}

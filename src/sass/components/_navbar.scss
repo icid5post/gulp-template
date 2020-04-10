@@ -1,0 +1,27 @@
+.cr-navbar{
+  background-color: #fff;
+  border-bottom: 1px solid $border-base;
+  .nav-link{
+    color: rgba(0,0,0,.5);
+  }
+}
+
+.user-block{
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  &__img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid $border-base;
+    background-color: #f5f5f5;
+    background-size: cover;
+    background-position: center center;
+    margin-left: 10px;
+  }
+  &__title{
+    font-family: $titleFont;
+  }
+}
